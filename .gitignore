@@ -1,6 +1,7 @@
 # IDE specific
 .idea/
 .vscode/
+2.1-databases/work_with_database/.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
