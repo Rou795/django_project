@@ -2,6 +2,7 @@
 .idea/
 .vscode/
 2.1-databases/work_with_database/.idea
+2.1-databases/models_list_displaying/.idea
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

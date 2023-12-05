@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 
 import phones.views
 
@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', phones.views.index),
     path('catalog/', phones.views.show_catalog, name='catalog'),
-    path('catalog/<slug:name_slug>/', phones.views.show_product, name='phone'),
+    re_path(r'catalog/\d{4}-\d{2}-\d{2}', phones.views.show_product, name='phone'),
 ]
